@@ -1,0 +1,13 @@
+
+{
+    "DB": {
+        "name": "mongodb",
+        "host": "arulk8:arulmurugan8@ds115592.mlab.com",
+        "port": 15592,
+        "dbName": "vidly"
+      },
+
+    "jwtPrivateKey": {
+        "value" : "Prod_myPrivateKey"
+      }
+}

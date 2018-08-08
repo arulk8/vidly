@@ -1,0 +1,12 @@
+{
+    "DB": {
+        "name": "mongodb",
+        "host": "localhost",
+        "port": 27017,
+        "dbName": "vidly"
+      },
+
+    "jwtPrivateKey": {
+        "value" : "myPrivateKey"
+      }
+}
