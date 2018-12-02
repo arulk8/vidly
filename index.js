@@ -34,14 +34,15 @@ app.set("views", "./views");
 app.use(express.json());
 //app.use(authentication);
 //app.use(logger);
+require("./startup/cors")(app);
 app.use(express.static("public"));
 app.use(helmet());
 app.use(morgan("tiny"));
 require("./startup/routes")(app);
-require("./startup/cors")(app);
+
 //startupDebugger('morgan is enabled');
 //dbDebugger('db is enabled');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3900;
 app.listen(port, () => {
   console.log(`listening on ${port}...`);
 });
