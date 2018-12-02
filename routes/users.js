@@ -36,6 +36,7 @@ router.post("/", async (req, res) => {
       password: passwordHash
     });
     user = await user.save();
+    console.log(user);
     const token = user.generateAuthToken();
     res
       .header("x-auth-token", token)
