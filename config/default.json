@@ -1,12 +1,13 @@
 {
-    "DB": {
-        "name": "mongodb",
-        "host": "localhost",
-        "port": 27017,
-        "dbName": "vidly"
-      },
+  "DB": {
+    "name": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "dbName": "vidly"
+  },
 
-    "jwtPrivateKey": {
-        "value" : "myPrivateKey"
-      }
+  "jwtPrivateKey": {
+    "value": "myPrivateKey"
+  },
+  "whiteList": "http://localhost:3000"
 }
